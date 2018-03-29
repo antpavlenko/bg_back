@@ -24,7 +24,7 @@ PAGINATION = False
 DEBUG = False
 TESTING = False
 
-SERVER_NAME = '35.188.166.90:80'
+SERVER_NAME = '35.188.166.90:8080'
 
 X_DOMAINS = '*'
 X_HEADERS = ['Authorization','Content-type']
