@@ -24,7 +24,7 @@ PAGINATION = False
 DEBUG = False
 TESTING = False
 
-SERVER_NAME = 'localhost:5000'
+SERVER_NAME = 'localhost:80'
 
 X_DOMAINS = '*'
 X_HEADERS = ['Authorization','Content-type']
