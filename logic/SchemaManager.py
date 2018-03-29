@@ -10,7 +10,7 @@ from os import listdir
 
 schemas = {}
 endpoints = {}
-PATH_TO_SCHEMAS = "C:\\bg\\schemas"
+PATH_TO_SCHEMAS = "./schemas"
 EXTENSION = 'json'
 
 def addSchema(name):
