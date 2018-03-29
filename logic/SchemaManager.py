@@ -16,7 +16,7 @@ EXTENSION = 'json'
 def addSchema(name):
     plural_name = name + "s"
     
-    json1_file = open(PATH_TO_SCHEMAS + '\\' + name + '.' + EXTENSION)
+    json1_file = open(PATH_TO_SCHEMAS + '/' + name + '.' + EXTENSION)
     json1_str = json1_file.read()
     schema = json.loads(json1_str)
     
