@@ -1,0 +1,182 @@
+{
+    "cluster" : {
+        "type" : "objectid",
+        "data_relation" : {
+            "resource" : "clusters",
+            "field" : "_id",
+            "embeddable" : true
+        }
+    },
+
+    "nameRU" : {
+        "type" : "string",
+        "required" : true,
+        "maxlength" : 500,
+        "minlength" : 1,
+        "empty" : false,
+        "nullable" : false
+    },
+    
+    "nameEN" : {
+        "type" : "string",
+        "required" : true,
+        "maxlength" : 500,
+        "minlength" : 1,
+        "empty" : false,
+        "nullable" : false
+    },
+    
+    "labels" : {
+        "type" : "list",
+        "schema" : {
+            "type" : "dict",
+            "schema" : {
+                "labelType" : {
+                    "type" : "string",
+                    "required" : true,
+                    "maxlength" : 500,
+                    "minlength" : 1,
+                    "empty" : false,
+                    "nullable" : false
+                    },
+                "label" : {
+                    "type" : "string",
+                    "required" : true,
+                    "maxlength" : 500,
+                    "minlength" : 1,
+                    "empty" : false,
+                    "nullable" : false
+                    }
+            },
+            "required" : false
+        }
+    },
+    
+    "levels" : {
+        "type" : "list",
+        "schema" : {
+            "type" : "dict",
+            "schema" : {
+                "level" : {
+                    "type" : "integer",
+                    "required" : true,
+                    "min" : 0,
+                    "nullable" : false
+                },
+                "levelNameRU": {
+                    "type" : "string",
+                    "required" : true,
+                    "maxlength" : 500,
+                    "minlength" : 1,
+                    "empty" : false,
+                    "nullable" : false
+                },
+                "levelNameEN": {
+                    "type" : "string",
+                    "required" : true,
+                    "maxlength" : 500,
+                    "minlength" : 1,
+                    "empty" : false,
+                    "nullable" : false
+                },
+                "definition" : {
+                    "type" : "string",
+                    "minlength" : 1,
+                    "required" : true,
+                    "empty" : false,
+                    "nullable" : false
+                },
+                "scenarios" : {
+                    "type" : "list",
+                    "schema" : {
+                        "type" : "dict",
+                        "schema" : {
+                            "scenarioName" : {
+                                "type" : "string",
+                                "required" : true,
+                                "maxlength" : 500,
+                                "minlength" : 1,
+                                "empty" : false,
+                                "nullable" : false
+                            },
+                            "scenarioId" : {
+                                "type" : "integer",
+                                "required" : true,
+                                "min" : 1,
+                                "nullable" : false
+                            }
+                        }
+                    }
+                },
+                "typizations" : {
+                    "type" : "list",
+                    "schema" : {
+                        "type" : "dict",
+                        "schema" : {
+                            "nameRU" : {
+                                "type" : "string",
+                                "required" : true,
+                                "maxlength" : 500,
+                                "minlength" : 1,
+                                "empty" : false,
+                                "nullable" : false
+                            },
+                            
+                            "nameEN" : {
+                                "type" : "string",
+                                "required" : true,
+                                "maxlength" : 500,
+                                "minlength" : 1,
+                                "empty" : false,
+                                "nullable" : false
+                            },
+
+                            "definition" : {
+                                "type" : "string",
+                                "minlength" : 1,
+                                "required" : true,
+                                "empty" : false,
+                                "nullable" : false
+                            },
+
+                            "namespace" : {
+                                "type" : "string",
+                                "maxlength" : 500
+                            }
+                        }
+                    }
+                },
+                "labels" : {
+                    "type" : "list",
+                    "schema" : {
+                        "type" : "dict",
+                        "schema" : {
+                            "labelType" : {
+                                "type" : "string",
+                                "required" : true,
+                                "maxlength" : 500,
+                                "minlength" : 1,
+                                "empty" : false,
+                                "nullable" : false
+                                },
+                            "label" : {
+                                "type" : "string",
+                                "required" : true,
+                                "maxlength" : 500,
+                                "minlength" : 1,
+                                "empty" : false,
+                                "nullable" : false
+                                }
+                        },
+                        "required" : false
+                    }
+                }
+            }
+        }
+    },
+    
+    "definition" : {
+        "type" : "string",
+        "minlength" : 1
+    }
+ }

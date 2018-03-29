@@ -1,0 +1,58 @@
+{
+    "nameRU" : {
+        "type" : "string",
+        "required" : true,
+        "maxlength" : 500,
+        "minlength" : 1,
+        "empty" : false,
+        "nullable" : false
+    },
+    
+    "nameEN" : {
+        "type" : "string",
+        "required" : true,
+        "maxlength" : 500,
+        "minlength" : 1,
+        "empty" : false,
+        "nullable" : false
+    },
+
+    "definition" : {
+        "type" : "string",
+        "minlength" : 1
+    },
+
+    "type" : {
+        "type" : "string",
+        "required" : true,
+        "empty" : false,
+        "nullable" : false
+    },
+
+    "dimensions" : {
+        "type" : "list",
+        "required" : true,
+        "nullable" : false,
+        "schema" : {
+            "type" : "dict",
+            "schema" : {
+                "roleNameRU" : {
+                    "type" : "string",
+                    "maxlength" : 500
+                },
+                "roleNameEN" : {
+                    "type" : "string",
+                    "maxlength" : 500
+                },
+                "dimension" : {
+                    "type" : "objectid",
+                    "data_relation" : {
+                        "resource" : "dimensions",
+                        "field" : "_id",
+                        "embeddable" : true
+                    }
+                }
+            }
+        }
+    }
+}

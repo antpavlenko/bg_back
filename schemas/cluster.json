@@ -1,0 +1,19 @@
+{
+    "nameRU" : {
+        "type" : "string",
+        "required" : true,
+        "maxlength" : 500,
+        "minlength" : 1,
+        "empty" : false,
+        "nullable" : false
+    },
+    
+    "nameEN" : {
+        "type" : "string",
+        "required" : true,
+        "maxlength" : 500,
+        "minlength" : 1,
+        "empty" : false,
+        "nullable" : false
+    }
+}
