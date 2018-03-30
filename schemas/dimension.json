@@ -13,6 +13,11 @@
         "maxlength" : 500
     },
 
+    "historyType" : {
+        "type" : "string",
+        "maxlength" : 500
+    },
+
     "nameRU" : {
         "type" : "string",
         "required" : true,
