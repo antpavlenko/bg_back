@@ -15,7 +15,8 @@
 
     "historyType" : {
         "type" : "string",
-        "maxlength" : 500
+        "maxlength" : 500,
+        "default" : "Мастер-данные"
     },
 
     "nameRU" : {
@@ -95,6 +96,11 @@
                     "required" : true,
                     "empty" : false,
                     "nullable" : false
+                },
+                "historyType" : {
+                    "type" : "string",
+                    "maxlength" : 500,
+                    "default" : "Мастер-данные"
                 },
                 "scenarios" : {
                     "type" : "list",
