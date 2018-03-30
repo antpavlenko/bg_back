@@ -8,6 +8,11 @@
         }
     },
 
+    "namespace" : {
+        "type" : "string",
+        "maxlength" : 500
+    },
+
     "nameRU" : {
         "type" : "string",
         "required" : true,
