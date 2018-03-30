@@ -29,6 +29,11 @@
         "nullable" : false
     },
 
+    "namespace" : {
+        "type" : "string",
+        "maxlength" : 500
+    },
+
     "dimensions" : {
         "type" : "list",
         "required" : true,
